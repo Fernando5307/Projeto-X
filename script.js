@@ -1,9 +1,8 @@
 // Captura dos elementos
-// ERRO: não existe nenhum elemento com id "nome"
 let nome = document.getElementById("nome");
 let idade = document.getElementById("idade");
 // ERRO: botão possui outro id no HTML
-let botao = document.getElementById("botao");
+let botao = document.getElementById("inscreve");
 // ERRO: elemento possui outro id no HTML
 let mensagem = document.getElementById("mensagem");
 // Evento do botão
@@ -16,12 +15,12 @@ botao.addEventListener("click", function () {
  "Preencha todos os campos antes de continuar.";
  }
  // ERRO: operador incorreto
- else if (idadeDigitada > 18) {
+ else if (idadeDigitada >= 18) {
  mensagem.textContent =
  "Inscrição realizada com sucesso!";
  }
  else {
- mensagem.textContent =
+ mensagem.textContent = 
  "É necessária autorização de um responsável.";
  }
 });

@@ -12,7 +12,6 @@ botao.addEventListener("click", function () {
  let idadeDigitada = idade.value;
  let emailDigitado = email.value;
   let telefoneDigitado = telefone.value; 
- // ERRO: condição incompleta
  if (nomeDigitado == "" || idadeDigitada == "" || emailDigitado =="" || telefoneDigitado =="") {
  mensagem.textContent =
  "Preencha todos os campos antes de continuar.";
